@@ -1,0 +1,27 @@
+<h1>CLASE 2</h1>
+<!--
+<h3>Esto se va a mostrar de manera condicional segun como yo quiera ngIf</h3>
+<!- dependiendo del valor de la variable se muestre o no 
+    *ngIf = cuando sea false no se mostrara 
+    de esta forma no aparece en el html por mas que este en false->
+<h4 *ngIf="mostrarCondicional">CONDICIONAL ngIf</h4>
+<!-  si se hace con css aparece en el html por mas que este en false->
+<h4 [style.display]="mostrarCondicional ? 'block':'none'">CONDICIONAL CSS</h4>
+<!- Pongo un boton para cambiar el valor de ngIf
+     y poder mostrar lo que contiene la etiqueta->
+<input type="button" value= "Cambiar" (click)="manejadora()">
+
+
+<h3>ngSwitch</h3>
+<div [ngSwitch]="persona.nombre">
+    <h4 *ngSwitchCase="Pepe">{{persona.nombre}},{{persona.apellido}}</h4>
+    <h4 *ngSwitchCase="Juan">{{persona.nombre}},{{persona.apellido}}</h4>
+    <h4 *ngSwitchDefault>Otro nombre</h4>
+</div>-->
+
+
+      <button mat-raised-button color="primary">Primary</button>
+
+<app-cargar-persona (onCargar)="onCargar($event)"></app-cargar-persona>
+<!-- INPUT PARA RECIBIR DATOS -->
+<app-listar-persona [listaNombres]='listaNombres'></app-listar-persona>

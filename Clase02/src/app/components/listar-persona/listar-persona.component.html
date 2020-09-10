@@ -1,0 +1,5 @@
+<h3>LISTADO PERSONAS</h3>
+<div *ngFor='let item of listaNombres; let i=index'>
+    {{i}} {{item.nombre}}, {{item.apellido}}, {{item.edad}}
+</div>
+<!-- <app-detalle-persona [persona]="persona"></app-detalle-persona> -->
